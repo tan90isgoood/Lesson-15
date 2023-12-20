@@ -12,6 +12,8 @@ colnames(Data)[4] # 列出第四個欄位名稱(依此類推)
 Result1 = lm(Data[,"Weight"]~Data[,"Height"])
 summary(Result1)
 
+
+
 Result1 = cor.test(Data[,"Weight"], Data[,"Height"], method = "pearson") # Pearson correlation
 Result1
 
